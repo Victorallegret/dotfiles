@@ -1,0 +1,15 @@
+---
+- name: Provisionning my mac
+  hosts: localhost
+  roles:
+    - brew
+    # - btt
+    # - feeds
+    # - git
+    # - iterm
+    # - macos
+    # - ruby
+    # - ssh
+    # - vim
+    # - vscode
+    # - zsh

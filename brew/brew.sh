@@ -10,10 +10,4 @@ fi
 # Make sure we’re using the latest Homebrew.
 brew update
 
-# Upgrade any already-installed formulae.
-brew upgrade
-
-brew bundle --file=brew/Brewfile
-
-# Remove outdated versions from the cellar.
-brew cleanup
+brew install ansible

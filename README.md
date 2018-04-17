@@ -26,6 +26,10 @@ This is my dotfiles for my system customizations and to setup my development env
 
 ## Installation
 
+```bash
+$ ansible-playbook -i "localhost," -c local playbook.yml
+```
+
 ### Brew
 
 Packages and applications are installed with [https://brew.sh/](https://brew.sh/).

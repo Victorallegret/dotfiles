@@ -1,0 +1,80 @@
+---
+- name: Tap a Homebrew repository
+  homebrew_tap:
+    name: "{{ item }}"
+  with_items:
+    - caskroom/cask
+    - homebrew/command-not-found
+    - caskroom/drivers
+
+- name: Installing brew packages
+  homebrew:
+    name: "{{ item }}"
+    state: present
+    update_homebrew: yes
+  with_items:
+    - composer
+    - coreutils
+    - ffmpeg
+    - git
+    - git-extras
+    - git-open
+    - gitlab-runner
+    - guetzli
+    - htop
+    - mas
+    - mysql
+    - node
+    - php
+    - postgresql
+    - screenfetch
+    - tig
+    - yarn
+    - zsh
+    - zsh-autosuggestions
+    - zsh-syntax-highlighting
+
+- name: Installing brew cask packages
+  homebrew_cask:
+    name: "{{ item }}"
+    state: present
+    update_homebrew: yes
+  with_items:
+    - bettertouchtool
+    - chromedriver
+    - discord
+    - docker
+    - dropbox
+    - filezilla
+    - firefox
+    - google-chrome
+    - insomnia
+    - iterm2
+    - itsycal
+    - kap
+    - logitech-options
+    - plex-media-player
+    - rambox
+    - sequel-pro
+    - spotify
+    - steam
+    - synology-drive
+    - vagrant
+    - virtualbox
+    - visual-studio-code
+    - vlc
+
+- name: Installing quick looks plugins
+  homebrew_cask:
+    name: "{{ item }}"
+    state: present
+    update_homebrew: yes
+  with_items:
+    - qlcolorcode
+    - qlmarkdown
+    - qlstephen
+    - quicklook-csv
+    - quicklook-json
+
+- name: Cleaning brew up
+  shell: brew cleanup
