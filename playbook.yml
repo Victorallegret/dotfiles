@@ -3,8 +3,8 @@
   hosts: localhost
   roles:
     - brew
+    - php
     # - btt
-    # - feeds
     # - git
     # - iterm
     # - macos

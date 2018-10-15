@@ -1,0 +1,8 @@
+---
+- name: Installs packages globally
+  composer:
+    command: require
+    global_command: yes
+    arguments: "{{ item }}"
+  with_items:
+    - laravel/installer

@@ -13,26 +13,31 @@
     state: present
     update_homebrew: yes
   with_items:
+    - ansible
+    - ccat
     - composer
     - coreutils
+    - ctop
     - ffmpeg
-    - git
     - git-extras
     - git-open
+    - git
     - gitlab-runner
+    - gnupg
     - guetzli
     - htop
     - mas
-    - mysql
     - node
+    - noti
     - php
     - postgresql
     - screenfetch
     - tig
+    - vim
     - yarn
-    - zsh
     - zsh-autosuggestions
     - zsh-syntax-highlighting
+    - zsh
 
 - name: Installing brew cask packages
   homebrew_cask:
@@ -40,6 +45,7 @@
     state: present
     update_homebrew: yes
   with_items:
+    - alfred
     - bettertouchtool
     - chromedriver
     - discord
@@ -48,12 +54,15 @@
     - filezilla
     - firefox
     - google-chrome
+    - handbrake
+    - highsierramediakeyenabler
     - insomnia
     - iterm2
     - itsycal
     - kap
     - logitech-options
     - plex-media-player
+    - postman
     - rambox
     - sequel-pro
     - spotify

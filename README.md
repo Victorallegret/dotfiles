@@ -32,12 +32,7 @@ $ ansible-playbook -i "localhost," -c local playbook.yml
 
 ### Brew
 
-Packages and applications are installed with [https://brew.sh/](https://brew.sh/).
-
-```bash
-$ chmod u+x brew/brew.sh # Make sure you can execute the file
-$ brew/brew.sh
-```
+Faire mas
 
 ### RVM
 
@@ -48,13 +43,6 @@ $ chmod u+x ruby/rvm.sh # Make sure you can execute the file
 $ ruby/rvm.sh
 $ ln -fs ~/dotfiles/ruby/.gemrc ~/
 $ ln -fs ~/dotfiles/ruby/.irbrc ~/
-```
-
-### PHP with composer
-
-```bash
-$ chmod u+x php/composer.sh # Make sure you can execute the file
-$ php/composer.sh
 ```
 
 #### Sensible macOS defaults
