@@ -1,13 +1,10 @@
 [user]
-	name = Guillaume Briday
-	email = guillaumebriday@gmail.com
-	signingkey = E1BCBA0E2532A75D
+	name = Victor Allegret
+	email = victor.allegret@gmail.com
 [core]
 	editor = vim
 	excludesfile = ~/.gitignore_global
 	autocrlf = input
-[pull]
-	rebase = true
 [merge]
 	ff = false
 [color]
@@ -16,7 +13,4 @@
 	branch = false
 	diff = less -+FX
 [commit]
-	gpgsign = true
 	verbose = true
-[gpg]
-	program = gpg

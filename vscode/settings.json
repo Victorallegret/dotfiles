@@ -12,10 +12,14 @@
     "explorer.openEditors.visible": 0,
     "workbench.fontAliasing": "auto",
     "explorer.sortOrder": "type",
+<<<<<<< HEAD
     "solargraph.checkGemVersion": false,
     "terminal.integrated.copyOnSelection": true,
     "markdown.extension.toc.githubCompatibility": true,
     "markdown.extension.toc.levels": "2..6",
+=======
+    "terminal.integrated.copyOnSelection": true,
+>>>>>>> Initial commit
     "files.exclude": {
         "**/.git": true,
         "**/.svn": true,

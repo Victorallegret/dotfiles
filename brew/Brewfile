@@ -3,27 +3,21 @@ tap 'homebrew/command-not-found'
 tap 'caskroom/drivers'
 
 # install packages
-brew 'ansible'
 brew 'ccat'
-brew 'composer'
-brew 'coreutils'
-brew 'ffmpeg'
 brew 'git-extras'
 brew 'git-open'
 brew 'git-recent'
 brew 'git'
-brew 'gnupg'
-brew 'guetzli'
 brew 'htop'
+brew 'guetzli'
 brew 'mas'
+brew 'fortune'
 brew 'n'
-brew 'php'
 brew 'postgresql'
 brew 'screenfetch'
 brew 'tig'
 brew 'tmux'
 brew 'vim'
-brew 'wp-cli'
 brew 'webp'
 brew 'yarn'
 brew 'zsh-autosuggestions'
@@ -31,44 +25,21 @@ brew 'zsh-syntax-highlighting'
 brew 'zsh'
 
 # Casks
-cask 'alfred'
 cask 'bettertouchtool'
 cask 'chromedriver'
 cask 'docker'
 cask 'dropbox'
 cask 'firefox'
+cask 'sketch'
+cask 'figma'
 cask 'google-chrome'
-cask 'handbrake'
-cask 'insomnia'
 cask 'iterm2'
 cask 'itsycal'
 cask 'kap'
 cask 'macmediakeyforwarder'
 cask 'plex-media-player'
-cask 'sequel-pro'
-cask 'spotify'
-cask 'synology-drive'
-cask 'vagrant'
+cask 'deezer'
 cask 'virtualbox'
+cask 'slack'
 cask 'vlc'
 cask 'vscodium'
-
-# Quick Look plugins
-cask 'qlcolorcode'
-cask 'qlmarkdown'
-cask 'qlstephen'
-cask 'quicklook-csv'
-cask 'quicklook-json'
-
-# Mas
-mas "1Password", id: 443987910
-mas "iStat Menus", id: 1319778037
-mas "Keynote", id: 409183694
-mas "Magnet", id: 441258766
-mas "Numbers", id: 409203825
-mas "Pages", id: 409201541
-mas "Reeder", id: 1449412482
-mas "Slack", id: 803453959
-mas "Telegram", id: 747648890
-mas "TheUnarchiver", id: 425424353
-mas "Tweetbot", id: 1384080005
