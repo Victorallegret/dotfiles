@@ -8,16 +8,13 @@ export EDITOR=vim
 ZSH_THEME="robbyrussell"
 DEFAULT_USER="$USER"
 
-plugins=(git rails bundler osx docker)
+plugins=(git bundler osx docker)
 
 # User configuration
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
-
-# Add composer to PATH for scripting.
-export PATH="$PATH:$HOME/.composer/vendor/bin"
 
 source $ZSH/oh-my-zsh.sh
 
@@ -53,14 +50,6 @@ alias go="git open"
 alias tigd="tig master..HEAD --first-parent --no-merges"
 alias gdc="git diff --cached"
 
-# Vagrant aliases
-alias vd="vagrant destroy"
-alias vgs="vagrant global-status"
-alias vh="vagrant halt"
-alias vp="vagrant provision"
-alias vs="vagrant status"
-alias vu="vagrant up"
-
 # Docker aliases
 alias dps="docker ps"
 alias dc="docker-compose"
@@ -68,14 +57,6 @@ alias dcup="docker-compose up -d"
 alias dcd="docker-compose down"
 alias yt="docker run --rm -u $(id -u):$(id -g) -v $PWD:/data vimagick/youtube-dl"
 dbash() { docker exec -i -t "$1" bash; }
-
-# php aliases
-alias phpunit="vendor/bin/phpunit"
-alias phpcs="vendor/bin/php-cs-fixer"
-
-# Artisan aliases
-alias artisan="php artisan"
-alias mfs="php artisan migrate:fresh --seed"
 
 # Source zsh-autosuggestions
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
